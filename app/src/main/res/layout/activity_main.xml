@@ -47,9 +47,9 @@
         android:layout_marginStart="@dimen/indent"
         android:ellipsize="end"
         android:singleLine="true"
-        app:layout_constraintBottom_toTopOf="@+id/published"
-        app:layout_constraintStart_toEndOf="@+id/avatar"
-        app:layout_constraintTop_toTopOf="@+id/avatar"
+        app:layout_constraintBottom_toTopOf="@id/published"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="@id/avatar"
         app:layout_constraintEnd_toStartOf="@id/menu"
         app:layout_constraintVertical_chainStyle="packed"
 
@@ -62,8 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/indent"
         android:layout_marginLeft="@dimen/indent"
-        app:layout_constraintBottom_toBottomOf="@+id/avatar"
-        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        app:layout_constraintStart_toEndOf="@id/avatar"
         app:layout_constraintTop_toBottomOf="@id/author"
 
         tools:text="@sample/posts.json/data/published" />
@@ -114,9 +114,9 @@
         android:textSize="16sp"
         android:layout_marginStart="@dimen/indent_icon_count"
         android:layout_marginLeft="@dimen/indent_icon_count"
-        app:layout_constraintBottom_toBottomOf="@+id/like"
-        app:layout_constraintStart_toEndOf="@+id/like"
-        app:layout_constraintTop_toTopOf="@+id/like"
+        app:layout_constraintBottom_toBottomOf="@id/like"
+        app:layout_constraintStart_toEndOf="@id/like"
+        app:layout_constraintTop_toTopOf="@id/like"
         tools:text="10"
         />
 
@@ -138,9 +138,9 @@
         android:background="@android:color/transparent"
         android:layout_marginStart="@dimen/indent"
         android:layout_marginLeft="@dimen/indent"
-        app:layout_constraintBottom_toBottomOf="@+id/like"
+        app:layout_constraintBottom_toBottomOf="@id/like"
         app:layout_constraintStart_toEndOf="@id/like_count"
-        app:layout_constraintTop_toTopOf="@+id/like"
+        app:layout_constraintTop_toTopOf="@id/like"
         app:srcCompat="@drawable/ic_baseline_share_24"
          />
 
@@ -150,10 +150,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/indent_icon_count"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/viewed_count"
+        app:layout_constraintBottom_toBottomOf="@id/viewed_count"
         app:layout_constraintEnd_toStartOf="@id/viewed_count"
-        app:layout_constraintTop_toTopOf="@+id/viewed_count"
-        app:srcCompat="@drawable/ic_baseline_remove_red_eye_24" />
+        app:layout_constraintTop_toTopOf="@id/viewed_count"
+        app:srcCompat="@drawable/ic_baseline_remove_red_eye_24"
+        android:layout_marginRight="@dimen/indent_icon_count" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
